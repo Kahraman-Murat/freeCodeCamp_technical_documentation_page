@@ -1,0 +1,308 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+<!--
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111">
+
+-->
+    <title>Technical Documentation Page</title>
+
+
+
+
+    <style>
+        html,
+        body {
+            min-width: 290px;
+            color: #4d4e53;
+            background-color: #ffffff;
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        #navbar {
+            position: fixed;
+            min-width: 290px;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color: rgba(0, 22, 22, 0.4);
+        }
+
+        header {
+            color: black;
+            margin: 10px;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: thin;
+        }
+
+        #main-doc header {
+            text-align: left;
+            margin: 0px;
+        }
+
+        #navbar ul {
+            height: 88%;
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        #navbar li {
+            color: #4d4e53;
+            border-top: 1px solid;
+            list-style: none;
+            position: relative;
+            width: 100%;
+        }
+
+        #navbar a {
+            display: block;
+            padding: 10px 30px;
+            color: #4d4e53;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #main-doc {
+            position: absolute;
+            margin-left: 310px;
+            padding: 20px;
+            margin-bottom: 110px;
+        }
+
+        section article {
+            color: #4d4e53;
+            margin: 15px;
+            font-size: 0.96em;
+        }
+
+        section li {
+            margin: 15px 0px 0px 20px;
+        }
+
+        code {
+            display: block;
+            text-align: left;
+            white-space: pre-line;
+            position: relative;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        @media only screen and (max-width: 815px) {
+
+            /* For mobile phones: */
+            #navbar ul {
+                border: 1px solid;
+                height: 207px;
+            }
+
+            #navbar {
+                background-color: white;
+                position: absolute;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-height: 275px;
+                border: none;
+                z-index: 1;
+                border-bottom: 2px solid;
+            }
+
+            #main-doc {
+                position: relative;
+                margin-left: 0px;
+                margin-top: 270px;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            #main-doc {
+                margin-left: -10px;
+            }
+
+            code {
+                margin-left: -20px;
+                width: 100%;
+                padding: 15px;
+                padding-left: 10px;
+                padding-right: 45px;
+                min-width: 233px;
+            }
+        }
+    </style>
+<!--
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+-->
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Basic HTML</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Say_Hello_to_HTML_Elements">Say Hello to HTML Elements</a></li>
+            <li><a class="nav-link" href="#Headline_with_the_h2_Element">Headline with the h2 Element</a></li>
+            <li><a class="nav-link" href="#Inform_with_the_Paragraph_Element">Inform with the Paragraph Element</a></li>
+            <li><a class="nav-link" href="#Uncomment_HTML">Uncomment HTML</a></li>
+            <li><a class="nav-link" href="#Comment_out_HTML">Comment out HTML</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>HTML is a markup language that uses a special syntax or notation to describe the structure of a
+                    webpage to the browser. HTML elements usually have opening and closing tags that surround and give
+                    meaning to content. For example, different elements can describe text as a heading, paragraph, or
+                    list item.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Say_Hello_to_HTML_Elements">
+            <header>Say Hello to HTML Elements</header>
+            <article>
+                <p>
+                    Welcome to freeCodeCamp's HTML coding challenges. These will walk you through web development
+                    step-by-step.</p>
+                <p>
+                    First, you'll start by building a simple web page using HTML. You can edit code in your code editor,
+                    which is embedded into this web page.
+                </p>
+                <p>Do you see the code in your code editor that says <code>&lt;h1&gt;Hello&lt;/h1&gt;</code>That's an
+                    HTML element.</p>
+                <p>
+                    Most HTML elements have an opening tag and a closing tag.Opening tags look like this:
+                </p>
+                <p><code><span><span>&lt;</span>h1</span><span>&gt;</span></code></p>
+                <p>
+                    Closing tags look like this:
+                </p>
+                <p><code><span><span>&lt;</span>/h1</span><span>&gt;</span></code></p>
+            </article>
+        </section>
+        <section class="main-section" id="Headline_with_the_h2_Element">
+            <header>Headline with the h2 Element</header>
+            <article>
+                <p>Over the next few lessons, we'll build an HTML5 cat photo web app piece-by-piece.</p>
+
+                <p>The <strong> h2 </strong> element you will be adding in this step will add a level two heading to the
+                    web page.
+                </p>
+                <p>This element tells the browser about the structure of your website. <strong> h1 </strong> elements
+                    are often used for main headings, while <strong> h2 </strong> elements are generally used for
+                    subheadings. There are also <strong> h3, h4, h5 </strong> and <strong> h6 </strong> elements to
+                    indicate different levels of subheadings.
+                </p>
+                <p>If we list the Headline Elements:</p>
+                <ul>
+                    <li>h1</li>
+                    <li>h2</li>
+                    <li>h3</li>
+                    <li>h4</li>
+                    <li>h5</li>
+                    <li>h6</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Inform_with_the_Paragraph_Element">
+            <header>Inform with the Paragraph Element</header>
+            <article>
+                The <strong> p </strong> element is the preferred element for paragraph text on websites.
+                <strong> p </strong> is short for "paragraph".
+                <p>You can create a paragraph element like
+                    this:<code><span>&lt;</span>p<span>&gt;</span>I'm a p tag!<span>&lt;</span>/p<span>&gt;</span></code>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Uncomment_HTML">
+            <header>Uncomment HTML</header>
+            <article>
+                <p>Commenting is a way that you can leave comments for other developers within your code without
+                    affecting the resulting output that is displayed to the end user.</p>
+                <p>Commenting is also a convenient way to make code inactive without having to delete it entirely.</p>
+                <p>Comments in HTML start with <span>&lt;</span>!-- and end with a --<span>&gt;</span></p>
+            </article>
+        </section>
+        <section class="main-section" id="Comment_out_HTML">
+            <header>Comment out HTML</header>
+            <article>
+                <p>Remember that in order to start a comment, you need to use
+                    <code><span>&lt;</span>!-- and to end a comment, you need to use --<span>&gt;</span></code>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>
+                        All the documentation in this page is taken from
+                        <a href="https://www.freecodecamp.org/learn/responsive-web-design/"
+                            target="_blank">freecodecamp</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <br>
+        <br>
+        <hr>
+        <p class="text-center"><i>Diese Webseite wurde von Murat Kahraman vorbereitet.</i></p>
+        <br>
+    </main>
+
+<!--
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
+    <script id="rendered-js">
+        // coded by @ChaituVR
+        // eslint-disable-next-line no-unused-vars
+        const projectName = 'technical-docs-page';
+  //# sourceURL=pen.js
+    </script>
+
+-->
+
+
+
+
+
+</body>
+
+</html>
